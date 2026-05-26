@@ -25,10 +25,10 @@ public class activity1 {
    public static void main(String[] args) {
     student s1 = new student();
     student s2 = new student(45, "Zian");
-    student s3 = new student(45,"dove" , 100000 );
+    student s3 = new student(45,"dovie" , 100000 );
     s1.displaydetails();
     s2.displaydetails();
     s3.displaydetails();
-    
+
    }
 }
