@@ -1,6 +1,6 @@
 package Lesson_10;
 import java.util.Scanner;
-public class EmployeeSalaryMain {
+public class employsalary {
     public  static Employee getEmployeeDetails(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id:");
@@ -10,7 +10,4 @@ public class EmployeeSalaryMain {
         String name = scanner.next();
         
     }
-}
-public class employsalary {
-    
 }
