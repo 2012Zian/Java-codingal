@@ -1,6 +1,6 @@
 package Lesson_14;
 import java.util.Arrays;
-class Dataset{
+class DataSet{
     private double[] data;
     private int dataSize;
     private double sum;
@@ -45,7 +45,7 @@ class Dataset{
     @Override
     public String toString() {
         return "DataSet{" +
-        "data=" + dataSize +
+        "data=" + Arrays.toString(data) +
         ", dataSize=" + dataSize +
         ", sum=" + sum +
         '}';
@@ -55,7 +55,7 @@ public class Main {
     public static void main(String[] args){
         DataSet dataset = new DataSet();
         dataset.add(10.0);
-        dataset.add(3,7);
+        dataset.add(3.7);
         dataset.add(4.5);
         System.out.println("Standard Deviation: " + dataset.getStandardDeviation());
         
