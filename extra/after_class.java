@@ -1,4 +1,4 @@
- package extra.java;
+ package extra;
  ClubMembers club = new ClubMembers();
  club.addMember(new MemberInfo("Zian",2026, true));
  club.addMember(new MemberInfo("Alex",2026, false));

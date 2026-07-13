@@ -1,5 +1,5 @@
-package extra.java;
-public class Turtle
+package extra;
+ class Turtle
 {
     // ===== Member Info / Instance Variables =====
     private int x;   // current x position
@@ -39,6 +39,6 @@ public class Turtle
     public int getDirection() { return direction; }
     
 }
-public class Main.java {
+public class Main {
     
 }
