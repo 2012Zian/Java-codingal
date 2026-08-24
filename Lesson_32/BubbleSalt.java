@@ -1,0 +1,41 @@
+ package Lesson_32;
+import java.util.Scanner;
+class BubbleSalt {
+    static void bubbleSort(int arr[] , int n)
+{
+
+         int i, j, temp;
+         boolean swapped;                                                                                                                                                
+         for(i=0 ; 1<n-1 ; i++) {
+            swapped = false;
+            for (j = 0; j<n-i-1 ; j++) {
+                if (arr[j] > arr[j + 1]) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                swapped = true;
+            }
+         }
+         if (!swapped) 
+            break;
+         }
+        }
+    
+        static void printArray(int arr[] , int size){
+            for (int i = 0 ; i<size ; i++)
+                System.out.println(arr[i] + " ");
+            System.out.println();
+
+        }
+        public static void main(String args[]) {
+            Scanner scn = new Scanner(System.in);
+            System.out.println("Enter the elements: ");
+            int n = scn.nextInt();
+            for (int i = 0; i < n; i++);
+
+        }
+        bubbleSort(arr, n);
+        System.out.println("sorted array: ");
+        printArray(arr, n);
+
+    }
