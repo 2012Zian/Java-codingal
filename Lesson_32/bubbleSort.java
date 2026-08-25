@@ -1,6 +1,6 @@
  package Lesson_32;
 import java.util.Scanner;
-class BubbleSalt {
+class BubbleSort {
     static void bubbleSort(int arr[] , int n)
 {
 
@@ -29,13 +29,18 @@ class BubbleSalt {
         }
         public static void main(String args[]) {
             Scanner scn = new Scanner(System.in);
-            System.out.println("Enter the elements: ");
+            System.out.println("Enter the number of elements: ");
             int n = scn.nextInt();
-            for (int i = 0; i < n; i++);
+            int[] arr = new int[n];
+            System.out.println("Enter the elements");
+            for (int i = 0; i < n; i++){
+                arr[i]  = scn.nextInt();
 
-        }
+            }
+        
         bubbleSort(arr, n);
         System.out.println("sorted array: ");
         printArray(arr, n);
-
+        scn.close();
     }
+}

@@ -26,10 +26,11 @@ public class binarySR {
       System.out.print("Enter the element to search: ");
       int x = scn.nextInt();
       binarySR ob = new binarySR();
-      int result = ob.binarySR(arr, 0,n - 1, x);
+      int result = ob.binarySearch(arr, 0,n - 1, x);
       if (result == -1)
         System.out.println("Element is not present in the array");
       else
         System.out.println("Elements is not present at index " + result);
+    scn.close();
 }
 }

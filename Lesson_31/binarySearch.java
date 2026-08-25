@@ -1,7 +1,7 @@
 package Lesson_31;
 import java.util.Scanner;
 public class binarySearch {
-    int  binarySearch(int arr[] , int x) {
+    int BinarySearch(int arr[] , int x) {
         int l = 0, r = arr.length -1;
         while (l <= r) {
             int m = 1 + (r - l) / 2;
@@ -29,10 +29,11 @@ public class binarySearch {
       System.out.print("Enter the element to search: ");
       int x = scn.nextInt();
       binarySearch ob = new binarySearch();
-      int result = ob.binarySearch(arr, x);
+      int result = ob.BinarySearch(arr, x);
       if (result == -1)
         System.out.println("Element is not present in the array");
       else
         System.out.println("Elements is not present at index " + result);
+    scn.close();
 }
 }
